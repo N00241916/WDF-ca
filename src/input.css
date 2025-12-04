@@ -1,1 +1,33 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+
+@theme {
+    
+    --foliage-900: #0e1214;
+    --foliage-800: #1c2428;
+    --foliage-700: #29363c;
+    --foliage-600: #374850;
+    --foliage-500: #455a64;
+    --foliage-400: #6a7b83;
+    --foliage-300: #8f9ca2;
+    --foliage-200: #b5bdc1;
+    --foliage-100: #dadee0;
+    --peach-900: #331d0a;
+    --peach-800: #663a14;
+    --peach-700: #99581f;
+    --peach-600: #cc7529;
+    --peach-500: #ff9233;
+    --peach-400: #ffa85c;
+    --peach-300: #ffbe85;
+    --peach-200: #ffd3ad;
+    --peach-100: #ffe9d6;
+    --ocean-900: #0c1c2f;
+    --ocean-800: #17385e;
+    --ocean-700: #23558d;
+    --ocean-600: #2e71bc;
+    --ocean-500: #3a8deb;
+    --ocean-400: #61a4ef;
+    --ocean-300: #89bbf3;
+    --ocean-200: #b0d1f7;
+    --ocean-100: #d8e8fb;
+
+}
