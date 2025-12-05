@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    
+
+    --font-poppins: Poppins, sans-serif;
     --color-foliage-800: #1c2428;
     --color-foliage-700: #29363c;
     --color-foliage-600: #374850;
@@ -34,10 +35,33 @@
 
 @layer base {  
         h1 {  
-            font-size: 24px;
+            font-size: 28px;
         }
 
         h2 {
+            font-size: 24px;
+        }
+
+        h3 {
             font-size: 20px;
         }
+
+        p {
+            font-size: 16px;
+        }
     }
+
+    .wavy-circle {
+        @apply w-[var(--s)] aspect-[1];
+        --s: 300px;
+        /* adjust to control the size */
+        --g: / calc(var(--s) * 0.433) calc(var(--s) * 0.433)
+          radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
+        mask: calc(50% + var(--s) * 0) calc(50% + var(--s) * 0.25) var(--g),
+          calc(50% + var(--s) * -0.217) calc(50% + var(--s) * -0.125) var(--g),
+          calc(50% + var(--s) * 0.217) calc(50% + var(--s) * -0.125) var(--g),
+          radial-gradient(calc(var(--s) * 0.331), #000 99%, #0000 101%) subtract,
+          calc(50% + var(--s) * -0.433) calc(50% + var(--s) * 0.25) var(--g),
+          calc(50% + var(--s) * 0) calc(50% + var(--s) * -0.5) var(--g),
+          calc(50% + var(--s) * 0.433) calc(50% + var(--s) * 0.25) var(--g);
+      }

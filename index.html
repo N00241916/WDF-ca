@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="./dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-white text-foliage-800">
+    <div class="bg-white text-foliage-800 font-poppins">
 
     <!-- Header -->
-    <section class="text-center px-4 pt-4 pb-8">
+    <section class="text-center px-4 pt-4 pb-8 relative">
         <div class="flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="334" height="280" viewBox="0 0 334 280" fill="none" class="absolute top-0 left-0">
+                <rect x="-290" y="195" width="440" height="344" rx="110" transform="rotate(-90 -290 195)" fill="#61A4EF"/>
+                <path d="M153.573 -80.4268C129.935 -80.4268 106.529 -75.771 84.6902 -66.7251C62.8516 -57.6793 43.0086 -44.4206 26.294 -27.706C9.57946 -10.9915 -3.67924 8.85156 -12.7251 30.6902C-21.7709 52.5288 -26.4268 75.9353 -26.4268 99.5732L53.4169 99.5732C53.4169 86.4205 56.0075 73.3965 61.0409 61.245C66.0742 49.0935 73.4516 38.0523 82.752 28.752C92.0524 19.4516 103.094 12.0741 115.245 7.0408C127.397 2.00747 140.421 -0.583152 153.573 -0.583153L153.573 -80.4268Z" fill="#61A4EF"/>
+                </svg>
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M24 3.2L0 14.4L6.4 17.28V22.72C4.48 23.36 3.2 25.28 3.2 27.2C3.2 29.12 4.48 31.04 6.4 31.68V32L3.52 38.72C2.56 41.6 3.2 44.8 8 44.8C12.8 44.8 13.44 41.6 12.48 38.72L9.6 32C11.52 31.04 12.8 29.44 12.8 27.2C12.8 24.96 11.52 23.36 9.6 22.72V18.88L24 25.6L48 14.4L24 3.2ZM38.08 24L23.68 30.4L16 26.88V27.2C16 29.44 15.04 31.36 13.44 32.96L15.36 37.44V37.76C15.68 39.04 16 40.32 15.68 41.6C17.92 42.56 20.48 43.2 23.68 43.2C34.24 43.2 38.08 36.8 38.08 33.6V24Z" fill="#29363C"/>
             </svg>
-            <h1 class="text-ocean-700 font-semibold">Uni</h1><h1 class="text-ocean-500">Scan</h1>
+            <h1 class="text-ocean-700 font-semibold ml-2">Uni</h1><h1 class="text-ocean-500 font-semibold">Scan</h1>
         </div>
         <img src="images/graduation-illustration.png" class="mx-auto w-l mb-6" alt="Graduation Illustration">
 
-        <h2 class="text-lg font-medium leading-relaxed text-foliage-600">
+        <h2 class="font-medium text-foliage-600">
             Never miss a deadline, event or opportunity again, live college life as you’re supposed to.
         </h2>
 
@@ -29,10 +36,10 @@
     </section>
 
     <section class="text-center px-6 py-12 bg-foliage-100">
-        <h1 class="text-xl text-foliage-700 font-semibold mb-4">Take it anywhere</h1>
-        <p class="text-foliage-600 mb-6">
+        <h1 class="text-foliage-700 font-semibold mb-4">Take it anywhere</h1>
+        <h2 class="text-foliage-600 mb-6">
             Life doesn’t stop outside the campus, neither should you.
-        </p>
+        </h2>
         <img src="images/map-illustration.png" class="mx-auto w-l" alt="Map Illustration">
     </section>
 
@@ -50,32 +57,32 @@
     <!-- Benefits -->
     <section class="px-6 py-12 space-y-6">
 
-        <div class="bg-gray-100 p-4 rounded-xl">
+        <div class="bg-foliage-100 p-4 rounded-xl">
             <div class="flex items-center gap-3 mb-2">
                 <img src="images/pfp.png" class="w-10 h-10 rounded-full" alt="">
-                <h4 class="font-semibold">Jeremy Fitzgerald</h4>
+                <h3 class="font-semibold">Jeremy Fitzgerald</h3>
             </div>
-            <p class="text-gray-600 text-sm">
+            <p class="text-foliage-600 text-sm">
                 "My life in college has never been easier, returning and using UniScan helped pick up my slack."
             </p>
         </div>
 
-        <div class="bg-gray-100 p-4 rounded-xl">
+        <div class="bg-foliage-100 p-4 rounded-xl">
             <div class="flex items-center gap-3 mb-2">
                 <img src="images/pfp2.png" class="w-10 h-10 rounded-full" alt="">
                 <h4 class="font-semibold">Ashley Hart</h4>
             </div>
-            <p class="text-gray-600 text-sm">
+            <p class="text-foliage-600 text-sm">
                 "Using UniScan helped tremendously with keeping me on schedule, leaving more time for me"
             </p>
         </div>
 
-        <div class="bg-gray-100 p-4 rounded-xl">
+        <div class="bg-foliage-100 p-4 rounded-xl">
             <div class="flex items-center gap-3 mb-2">
                 <img src="images/pfp3.png" class="w-10 h-10 rounded-full" alt="">
                 <h4 class="font-semibold">Danika Connolly</h4>
             </div>
-            <p class="text-gray-600 text-sm">
+            <p class="text-foliage-600 text-sm">
                 "I got to see shops and experiences near me that I didn’t even know existed, all recommended by other students!"
             </p>
         </div>
@@ -111,10 +118,10 @@
     <section class="text-center px-6 py-12">
         <img src="images/students-illustration.png" class="w-xs mx-auto mb-6" alt="">
         
-        <h3 class="text-xl font-semibold mb-3">Made by students, for students</h3>
-        <p class="text-gray-600 mb-6">
+        <h2 class="font-semibold mb-3">Made by students, for students</h2>
+        <h3 class="text-foliage-600 mb-6">
             Take control of your college life today.
-        </p>
+        </h3>
 
         <div class="flex justify-center gap-4">
             <img src="images/play-store.png" class="w-36" alt="Google Play">
