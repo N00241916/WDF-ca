@@ -2,32 +2,42 @@
 
 @theme {
     
-    --foliage-900: #0e1214;
-    --foliage-800: #1c2428;
-    --foliage-700: #29363c;
-    --foliage-600: #374850;
-    --foliage-500: #455a64;
-    --foliage-400: #6a7b83;
-    --foliage-300: #8f9ca2;
-    --foliage-200: #b5bdc1;
-    --foliage-100: #dadee0;
-    --peach-900: #331d0a;
-    --peach-800: #663a14;
-    --peach-700: #99581f;
-    --peach-600: #cc7529;
-    --peach-500: #ff9233;
-    --peach-400: #ffa85c;
-    --peach-300: #ffbe85;
-    --peach-200: #ffd3ad;
-    --peach-100: #ffe9d6;
-    --ocean-900: #0c1c2f;
-    --ocean-800: #17385e;
-    --ocean-700: #23558d;
-    --ocean-600: #2e71bc;
-    --ocean-500: #3a8deb;
-    --ocean-400: #61a4ef;
-    --ocean-300: #89bbf3;
-    --ocean-200: #b0d1f7;
-    --ocean-100: #d8e8fb;
+    --color-foliage-800: #1c2428;
+    --color-foliage-700: #29363c;
+    --color-foliage-600: #374850;
+    --color-foliage-500: #455a64;
+    --color-foliage-900: #0e1214;
+    --color-foliage-400: #6a7b83;
+    --color-foliage-300: #8f9ca2;
+    --color-foliage-200: #b5bdc1;
+    --color-foliage-100: #dadee0;
+    --color-peach-900: #331d0a;
+    --color-peach-800: #663a14;
+    --color-peach-700: #99581f;
+    --color-peach-600: #cc7529;
+    --color-peach-500: #ff9233;
+    --color-peach-400: #ffa85c;
+    --color-peach-300: #ffbe85;
+    --color-peach-200: #ffd3ad;
+    --color-peach-100: #ffe9d6;
+    --color-ocean-900: #0c1c2f;
+    --color-ocean-800: #17385e;
+    --color-ocean-700: #23558d;
+    --color-ocean-600: #2e71bc;
+    --color-ocean-500: #3a8deb;
+    --color-ocean-400: #61a4ef;
+    --color-ocean-300: #89bbf3;
+    --color-ocean-200: #b0d1f7;
+    --color-ocean-100: #d8e8fb;
 
 }
+
+@layer base {  
+        h1 {  
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
