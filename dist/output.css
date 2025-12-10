@@ -37,9 +37,11 @@
     --color-foliage-600: #374850;
     --color-foliage-500: #455a64;
     --color-foliage-100: #dadee0;
+    --color-ocean-800: #17385e;
     --color-ocean-700: #23558d;
     --color-ocean-500: #3a8deb;
     --color-ocean-300: #89bbf3;
+    --color-ocean-100: #d8e8fb;
   }
 }
 @layer base {
@@ -203,29 +205,17 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .col-6 {
-    grid-column: 6;
-  }
   .col-span-6 {
     grid-column: span 6 / span 6;
+  }
+  .mx-\[8\%\] {
+    margin-inline: 8%;
   }
   .mx-\[12\%\] {
     margin-inline: 12%;
   }
-  .mx-\[16\%\] {
-    margin-inline: 16%;
-  }
   .mx-\[20\%\] {
     margin-inline: 20%;
-  }
-  .mx-\[24\%\] {
-    margin-inline: 24%;
-  }
-  .mx-\[32\%\] {
-    margin-inline: 32%;
-  }
-  .mx-\[50\%\] {
-    margin-inline: 50%;
   }
   .mx-auto {
     margin-inline: auto;
@@ -308,8 +298,17 @@
   .items-center {
     align-items: center;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-3 {
     gap: calc(var(--spacing) * 3);
@@ -320,14 +319,8 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
-  }
-  .gap-20 {
-    gap: calc(var(--spacing) * 20);
   }
   .space-y-6 {
     :where(& > :not(:last-child)) {
@@ -366,6 +359,9 @@
   }
   .bg-ocean-300 {
     background-color: var(--color-ocean-300);
+  }
+  .bg-ocean-800 {
+    background-color: var(--color-ocean-800);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -406,6 +402,9 @@
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
   }
+  .pt-8 {
+    padding-top: calc(var(--spacing) * 8);
+  }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
   }
@@ -441,6 +440,9 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
+  }
+  .text-ocean-100 {
+    color: var(--color-ocean-100);
   }
   .text-ocean-500 {
     color: var(--color-ocean-500);
@@ -551,11 +553,6 @@
       display: none;
     }
   }
-  .lg\:col-3 {
-    @media (width >= 64rem) {
-      grid-column: 3;
-    }
-  }
   .lg\:col-span-3 {
     @media (width >= 64rem) {
       grid-column: span 3 / span 3;
@@ -574,6 +571,9 @@
   }
   p {
     font-size: 16px;
+  }
+  p2 {
+    font-size: 12px;
   }
 }
 .wavy-circle {
