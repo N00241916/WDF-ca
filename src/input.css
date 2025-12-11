@@ -55,17 +55,20 @@
         }
     }
 
-    .wavy-circle {
-        @apply w-[var(--s)] aspect-[1];
-        --s: 300px;
-        /* adjust to control the size */
-        --g: / calc(var(--s) * 0.433) calc(var(--s) * 0.433)
-          radial-gradient(50% 50%, #000 99%, #0000 101%) no-repeat;
-        mask: calc(50% + var(--s) * 0) calc(50% + var(--s) * 0.25) var(--g),
-          calc(50% + var(--s) * -0.217) calc(50% + var(--s) * -0.125) var(--g),
-          calc(50% + var(--s) * 0.217) calc(50% + var(--s) * -0.125) var(--g),
-          radial-gradient(calc(var(--s) * 0.331), #000 99%, #0000 101%) subtract,
-          calc(50% + var(--s) * -0.433) calc(50% + var(--s) * 0.25) var(--g),
-          calc(50% + var(--s) * 0) calc(50% + var(--s) * -0.5) var(--g),
-          calc(50% + var(--s) * 0.433) calc(50% + var(--s) * 0.25) var(--g);
-      }
+@layer components {
+        .test {
+            @apply flex flex-col bg-foliage-100 p-4 rounded-xl;
+        }
+
+        .test-image {
+            @apply w-10 h-10 rounded-full;
+        }
+
+        .test-name {
+            @apply mt-6 text-lg/8 font-semibold tracking-tight text-gray-900 dark:text-white;
+        }
+
+        .test-comment {
+            @apply text-base/7 text-gray-600 dark:text-gray-400;
+        }
+    }
