@@ -46,11 +46,19 @@
             font-size: 20px;
         }
 
+        h4 {
+            font-size: 18px;
+        }
+
         p {
             font-size: 16px;
         }
 
-        p2 {
+        psm {
+            font-size: 14px;
+        }
+
+        pmini {
             font-size: 12px;
         }
     }
