@@ -47,6 +47,7 @@
     --color-ocean-800: #17385e;
     --color-ocean-700: #23558d;
     --color-ocean-500: #3a8deb;
+    --color-ocean-400: #61a4ef;
     --color-ocean-300: #89bbf3;
     --color-ocean-100: #d8e8fb;
   }
@@ -218,6 +219,9 @@
   .col-span-12 {
     grid-column: span 12 / span 12;
   }
+  .mx-\[4\%\] {
+    margin-inline: 4%;
+  }
   .mx-\[8\%\] {
     margin-inline: 8%;
   }
@@ -251,9 +255,6 @@
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
   }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
-  }
   .flex {
     display: flex;
   }
@@ -272,9 +273,6 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-auto {
-    height: auto;
-  }
   .w-3xl {
     width: var(--container-3xl);
   }
@@ -287,20 +285,11 @@
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
-  .w-fit {
-    width: fit-content;
-  }
   .w-full {
     width: 100%;
   }
   .w-xl {
     width: var(--container-xl);
-  }
-  .w-xs {
-    width: var(--container-xs);
-  }
-  .max-w-full {
-    max-width: 100%;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -344,6 +333,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -384,6 +376,12 @@
   }
   .bg-ocean-300 {
     background-color: var(--color-ocean-300);
+  }
+  .bg-ocean-400 {
+    background-color: var(--color-ocean-400);
+  }
+  .bg-ocean-500 {
+    background-color: var(--color-ocean-500);
   }
   .bg-ocean-800 {
     background-color: var(--color-ocean-800);
@@ -582,34 +580,19 @@
       grid-column: span 6 / span 6;
     }
   }
-  .md\:ml-10 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:ml-18 {
-    @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 18);
-    }
-  }
   .md\:ml-20 {
     @media (width >= 48rem) {
       margin-left: calc(var(--spacing) * 20);
     }
   }
-  .md\:ml-200 {
+  .md\:ml-24 {
     @media (width >= 48rem) {
-      margin-left: calc(var(--spacing) * 200);
+      margin-left: calc(var(--spacing) * 24);
     }
   }
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:items-start {
-    @media (width >= 48rem) {
-      align-items: flex-start;
     }
   }
   .md\:justify-start {
