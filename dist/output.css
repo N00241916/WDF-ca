@@ -47,6 +47,7 @@
     --color-ocean-700: #23558d;
     --color-ocean-500: #3a8deb;
     --color-ocean-300: #89bbf3;
+    --color-ocean-200: #b0d1f7;
     --color-ocean-100: #d8e8fb;
   }
 }
@@ -372,6 +373,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-ocean-300 {
+    border-color: var(--color-ocean-300);
+  }
   .bg-foliage-100 {
     background-color: var(--color-foliage-100);
   }
@@ -546,12 +550,34 @@
       }
     }
   }
+  .hover\:bg-ocean-100 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-ocean-100);
+      }
+    }
+  }
   .hover\:shadow-xs {
     &:hover {
       @media (hover: hover) {
         --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.05));
         box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
       }
+    }
+  }
+  .active\:bg-foliage-100 {
+    &:active {
+      background-color: var(--color-foliage-100);
+    }
+  }
+  .active\:bg-ocean-200 {
+    &:active {
+      background-color: var(--color-ocean-200);
+    }
+  }
+  .active\:text-foliage-600 {
+    &:active {
+      color: var(--color-foliage-600);
     }
   }
   .data-closed\:scale-95 {
