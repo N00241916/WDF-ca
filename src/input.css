@@ -80,3 +80,13 @@
             @apply text-base/7 text-gray-600 dark:text-gray-400;
         }
     }
+
+/* @layer utilities {
+    .w-sm {
+        width: 20rem;
+    }
+
+    .w-2xl {
+        width: 42rem;
+    }
+} */
