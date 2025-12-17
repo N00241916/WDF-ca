@@ -13,6 +13,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
@@ -286,6 +287,9 @@
   }
   .w-md {
     width: var(--container-md);
+  }
+  .w-sm {
+    width: var(--container-sm);
   }
   .border-collapse {
     border-collapse: collapse;
