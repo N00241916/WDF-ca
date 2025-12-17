@@ -213,6 +213,9 @@
   .col-span-12 {
     grid-column: span 12 / span 12;
   }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
   .mx-\[4\%\] {
     margin-inline: 4%;
   }
@@ -221,6 +224,9 @@
   }
   .mx-\[12\%\] {
     margin-inline: 12%;
+  }
+  .mx-\[18\%\] {
+    margin-inline: 18%;
   }
   .mx-\[20\%\] {
     margin-inline: 20%;
@@ -569,6 +575,21 @@
   .md\:mx-\[20\%\] {
     @media (width >= 48rem) {
       margin-inline: 20%;
+    }
+  }
+  .md\:mx-\[24\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 24%;
+    }
+  }
+  .md\:mx-\[32\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 32%;
+    }
+  }
+  .md\:mx-\[40\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 40%;
     }
   }
   .md\:mx-auto {
