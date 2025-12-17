@@ -216,6 +216,9 @@
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
+  .mx-8 {
+    margin-inline: calc(var(--spacing) * 8);
+  }
   .mx-\[4\%\] {
     margin-inline: 4%;
   }
@@ -585,6 +588,11 @@
   .md\:mx-\[32\%\] {
     @media (width >= 48rem) {
       margin-inline: 32%;
+    }
+  }
+  .md\:mx-\[33\%\] {
+    @media (width >= 48rem) {
+      margin-inline: 33%;
     }
   }
   .md\:mx-\[40\%\] {
