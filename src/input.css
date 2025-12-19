@@ -30,6 +30,17 @@
     --color-ocean-300: #89bbf3;
     --color-ocean-200: #b0d1f7;
     --color-ocean-100: #d8e8fb;
+    --color-greyscale-950: #000000;
+    --color-greyscale-900: #191919;
+    --color-greyscale-800: #333333;
+    --color-greyscale-700: #4d4d4d;
+    --color-greyscale-600: #666666;
+    --color-greyscale-500: #808080;
+    --color-greyscale-400: #999999;
+    --color-greyscale-300: #b3b3b3;
+    --color-greyscale-200: #cccccc;
+    --color-greyscale-100: #e6e6e6;
+    --color-greyscale-50: #ffffff;
 
 }
 
@@ -68,16 +79,20 @@
             @apply flex flex-col bg-foliage-100 p-4 rounded-xl;
         }
 
+        .test-top-container {
+            @apply flex items-center gap-3 mb-2;
+        }
+
         .test-image {
             @apply w-10 h-10 rounded-full;
         }
 
         .test-name {
-            @apply mt-6 text-lg/8 font-semibold tracking-tight text-gray-900 dark:text-white;
+            @apply font-semibold text-foliage-800;
         }
 
         .test-comment {
-            @apply text-base/7 text-gray-600 dark:text-gray-400;
+            @apply text-foliage-600;
         }
     }
 
